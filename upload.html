@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/style1.css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Upload Student Information</title>
+    <style>
+        body {
+            background-color: #f2f2f2; /* Set background color */
+            font-family: Arial, sans-serif; /* Set font */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+        .container {
+            max-width: 600px; /* Set max width of container */
+            margin: 50px auto; /* Center container horizontally */
+            background-color: #fff; /* Set container background color */
+            padding: 20px; /* Add padding to container */
+            border-radius: 10px; /* Add border radius */
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Add box shadow */
+        }
+        h2 {
+            text-align: center; /* Center heading */
+        }
+        label {
+            display: block; /* Display labels as block elements */
+            margin-bottom: 5px; /* Add margin below labels */
+        }
+        input[type="text"], input[type="file"], input[type="checkbox"], input[type="submit"] {
+            width: 100%; /* Set input fields width to 100% */
+            padding: 8px; /* Add padding to input fields */
+            margin-bottom: 15px; /* Add margin below input fields */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+        input[type="submit"] {
+            background-color: #4CAF50; /* Set submit button background color */
+            color: white; /* Set submit button text color */
+            border: none; /* Remove border */
+            cursor: pointer; /* Change cursor on hover */
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049; /* Change background color on hover */
+        }
+    </style>
+</head>
+<body>  
+    <div class="container">
+        <h2>Upload Student Information</h2>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <label for="student_name">Student Name:</label>
+            <input type="text" name="student_name" id="student_name">
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+            <label for="company_name">Company Name:</label>
+            <input type="text" name="company_name" id="company_name">
+            <label for="addres">Address:</label>
+            <input type="text" name="address" id="address">
+                
+            <label for="image_file">Upload Student Image:</label>
+            <input type="file" name="image_file" id="image_file">
+            
+            <label for="id_card">Upload Student ID Card:</label>
+            <input type="file" name="id_card" id="id_card">
+
+            <label for="placed">Are you placed?</label>
+            <input type="checkbox" name="placed" id="placed">
+            
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+</body>
+</html>

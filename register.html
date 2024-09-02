@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="CSS/style1.css">
+	<nav class="navbar navbar-fixed-top" id="top-nav">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Campus Recruitment System</a>
+			</div>
+			<ul id="list1" class="nav navbar-nav">
+				<li class="active"><a href="index.html">Home</a></li>
+			</ul>
+		</div>
+	</nav>
+</head>
+<body>
+	<div class="container-fluid" id="dash">
+		<h2>STUDENT REGISTRATION</h2>
+		<form action="student.php" method="POST" enctype="multipart/form-data">
+			<div class="container">
+				<h3>Personal Details</h3>
+				<hr>
+				<ol>
+					<li><label for="name"><b>Name:</b></label>
+						<span style="margin-left: 100px;">
+						<input type="text" placeholder="Enter in capital letters" name="name" required ></span></li>
+					<li><label for="email"><b>Email(Username):</b></label>
+						<span style="margin-left: 23px;">
+						<input type="email" placeholder="abc@xyz.com" name="email" required></span></li>
+					<li><label for="dob"><b>Date of birth:</b></label>
+						<span style="margin-left: 55px;">
+						<input type="date" name="dob" required></span></li>
+					<li><label for="branch"><b>Branch:</b></label>
+						<span style="margin-left: 90px;">
+						<select name="branch" placeholder="Select">
+							<option label="CSE">CSE</option>
+							<option label="IT">IT</option>
+							<option label="ECE">ECE</option>
+							<option label="EEE">EEE</option>
+							<option label="ME">ME</option>
+							<option label="CE">CE</option>
+						</select></span></li>
+					<li><label for="year"><b>Year of passing out:</b></label>
+						<span style="margin-left: 10px;">
+						<input type="number" placeholder="Ex. 2019" name="year" required></span></li>
+					<li><label for="cgpa"><b>CGPA:</b></label>
+						<span style="margin-left: 97px;">
+						<input type="number" step="0.01" placeholder="Out of 10" name="cgpa" required max="10" min="0"></span></li>
+					<li><label for="twp"><b>12th Percentage:</b></label>
+						<span style="margin-left: 30px;">
+						<input type="number" step="0.01" placeholder="Ex.85.5" name="twp" required min="0" max="100"></span></li>
+					<li><label for="tenp"><b>10th Percentage:</b></label>
+						<span style="margin-left: 30px;">
+						<input type="number" step="0.01" placeholder="Ex.85.5" name="tenp" required min="0" max="100"></span></li>
+					<li><label for="pwd"><b>Password:</b></label>
+						<span style="margin-left: 70px;">
+						<input type="password" placeholder="minimum 6 characters" name="pwd" required></span></li>
+					<li><label for="supply"><b>Backlog:</b></label>
+						<span style="margin-left: 80px;">
+						<input type="number" placeholder="only numbers are allowed" name="supply" required></span></li>
+					<li><label for="phone"><b>Contact number:</b></label>
+						<span style="margin-left: 27px;">
+						<input type="number" name="phone" required></span></li>
+					<li><label for="degree"><b>Course:</b></label>
+						<span style="margin-left: 85px;">
+						<select name="degree" placeholder="Select">
+							<option label="BTech">B.Tech</option>
+							<option label="MTech">M.Tech</option>
+						</select></span></li>
+				</ol>
+				<hr>
+				<button type="submit" name="insert" class="registerbtn">Register</button>
+			</div>
+		</form>
+		<div class="container signin">
+			<p>Already have an account? <a href="index.html">Login</a>.</p>
+		</div>
+	</div>
+</body>
+<footer>
+	<nav class="navbar navbar-footer" id="bottom-nav" style="width:110%">
+		<div class="container-fluid">
+			<div id="col1">
+				<ul id="blist1">
+					<li><a href='https://lbscek.ac.in/career-guidance-placement-unit-cgpu/'>About Us</a></li>
+					<li><a href='faq2.html'>FAQs</a></li>
+					<li><a href='https://lbscek.ac.in/contact-2/'>Contact Us</a></li>
+				</ul>
+			</div>
+			<div id="col3" class="container-fluid">
+				<ul id="blist3">
+					<li><a href='https://www.facebook.com/lbscekasaragod?mibextid=LQQJ4d' class="fa fa-facebook fa-2x"></a></li>
+					<li><a href='https://www.instagram.com/lbsce_ksd/?igsh=MWhmcWltanIzZHc5Zw%3D%3D&utm_source=qr' class="fa fa-instagram fa-2x"></a></li>
+					<li><a href='https://in.linkedin.com/school/l.b.s-college-of-engineering-kasaragod/' class="fa fa-linkedin fa-2x"></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</footer>
+</html>
