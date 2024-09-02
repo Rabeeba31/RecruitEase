@@ -1,0 +1,168 @@
+#top-nav{
+		background : #0B0B3B;	
+}
+
+#bottom-nav{
+		background :#0B0B3B;	
+		bottom: -20;
+		/*position: fixed;*/
+		overflow: hidden;
+		width: 100%;
+}
+
+#col1{
+	/*background: red;*/
+	width :400px;
+	height: 100px;
+	float : left;
+	margin: 50px;
+	 display: table-cell;
+}
+
+#col2{
+	/*background: green;*/
+	width :400px;
+	height: 100px;
+	float : left;
+	margin : 50px;
+	 display: table-cell;
+}
+
+#col3{
+	/*background: blue;*/
+	width :220px;
+	height: 100px;
+	float : right;
+	margin : 10px;
+	 display: table-cell;
+}
+	
+#blist1{
+	list-style-type:none;
+	margin-top: 15px;
+}
+
+ #blist3 li{
+	display : inline;
+	size: 100px;
+	padding: 10px;
+	cursor : pointer;
+	color:white;
+}
+#blist4 {
+	color:white;
+
+}
+
+#lic{
+	position: fixed;
+	bottom: 50px;
+	margin:10px;
+	color:white;
+}	
+	
+a{
+	color: white;	
+}
+
+
+body{
+	background: #557399;
+	/*margin-top:40px;
+  //margin-left:20px;
+  //margin-right:20px;*/
+  margin-bottom:40px;
+  padding-top:50px;
+}
+
+#frm1{
+	background: #AED5F9;
+	/*margin-right:500px;
+	margin-left:500px;*/
+   height:auto;
+   width: 300px;
+	margin-top: 20%;
+
+}
+
+#main{
+	margin-top: 50px;
+	margin-right: 200px;
+	margin-left: 200px;
+  	Background-color: #AED5F9;
+}
+
+#dash{
+
+	margin: 50px;
+}
+.row .well{
+	border: black solid;
+}
+img{
+	margin: 0 auto;
+}
+
+.label-style {
+    margin-right: 10px;
+}
+
+.input-style {
+    margin-left: 10px;
+}
+.hero-image {
+    background-image: url('images/download.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    font-family: 'Nova Square';
+    margin-bottom: 20px;
+}
+
+.hero-text form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-text input,
+.hero-text select,
+.hero-text button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.hero-text button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.hero-text button:hover {
+    background-color: #45a049;
+}
+
+.hero-text .psw a {
+    color: #2196F3;
+}
+
+.imgDivBg{
+	background-color: #45a049;
+}

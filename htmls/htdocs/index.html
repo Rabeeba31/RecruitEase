@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Quintessential' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="CSS/style1.css">
+		<nav class="navbar navbar-fixed-top" id="top-nav">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" style="font-family:Nova Square" href="#">Campus Recruitment Management System</a>
+				</div>
+				
+			</div>
+		</nav>
+		
+		<script>
+			function fun(){
+				alert("Please contact admin if you have forgotten your password!");
+			}
+		</script>
+	</head>
+	<body>
+
+		
+		<div class="well text-center" id="main">
+		<h1 align="center" style="font-family:Nova Square" >RECRUITEASE</h1>
+  			<img class="img-responsive " src="images/download.jpg" height="400" width="700">
+  		</div>
+		
+	<div class="well container-fluid text-center" id="frm1">
+		<form action="login.php" method="POST">
+			<div>
+				<label for="usrnm"><b>Username</b></label>
+				<input type="text" placeholder="Enter email" name="uname" id="usrnm" required>
+			</div>
+			<div>
+				<label for="pswrd"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="pwd" id="pswrd" required>
+			</div>
+			<div>
+				<select name="type">
+					<option value="Student">Student</option>
+					<option value="Company">Company</option>
+					<option value="Admin">Admin</option>
+				</select>
+				
+				<button type="submit">Login</button>
+				<BR>
+				<span class="psw" onclick="fun()" ><a href="#">Forgot password?</a></span>
+			</div>
+          <div>
+		  <p>New student?
+		  <a href="register.html">register here</a></p>
+		  <p>New Company?
+		  <a href="company_register.html">register here</a></p>
+		  </div>
+		  
+		</form>
+</div>
+<footer>
+	<nav class="navbar navbad-default" id="bottom-nav">
+		<div class="container-fluid">
+			<div id="col1" >
+				<ul id="blist1">
+					<li><a href='https://lbscek.ac.in/career-guidance-placement-unit-cgpu/'>About Us</a></li>
+					<li><a href='faq.html'>FAQs</a></li>
+					<li><a href='https://lbscek.ac.in/contact-2/'>Contact Us</a></li>
+				
+				</ul>
+			</div>
+			<div id="col3" class=" container-fluid">
+	
+				<ul id="blist3" >
+					<li> <a href='https://www.facebook.com/lbscekasaragod?mibextid=LQQJ4d'  class="fa fa-facebook fa-2x" ></a></i></li>
+					<li> <a href='https://www.instagram.com/lbsce_ksd/?igsh=MWhmcWltanIzZHc5Zw%3D%3D&utm_source=qr' class="fa fa-instagram fa-2x"></a></i></li>
+					<li> <a href='https://in.linkedin.com/school/l.b.s-college-of-engineering-kasaragod/' class="fa fa-linkedin fa-2x"></a></i></li>
+				</ul>
+				
+			
+		</div>
+	</nav>
+</footer>
+		
+	</body>
+
+</html>
